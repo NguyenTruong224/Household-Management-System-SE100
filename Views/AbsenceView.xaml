@@ -5,8 +5,116 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Household_Management_System.Views"
         mc:Ignorable="d"
+         WindowStartupLocation="CenterScreen"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         Title="AbsenceView" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="#4CE632">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <StackPanel Orientation="Horizontal" >
+                    <Button Foreground="Black"  Background="#4CE632" Content="Hệ thống"></Button>
+                    <Button Foreground="Black"  Background="#4CE632" Content="Danh Mục"></Button>
+                    <Button Foreground="Black"  Background="#4CE632" Content="Báo Cáo"></Button>
+                    <Button Foreground="Black"  Background="#4CE632" Content="Trợ giúp"></Button>
+                </StackPanel>
+                
+            </Grid>
+            <Grid Grid.Column="1" HorizontalAlignment="Right">
+                <StackPanel   Orientation="Horizontal">
+                    <Button FontWeight="SemiBold" Margin="0,0,0,5" Foreground="Black"  Background="#4CE632" Content="Quay lại"></Button>
+                </StackPanel>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" >
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Height="25" FontWeight="SemiBold" Text="Danh sách tạm vắng" Margin="20,5,5,0" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="Black" FontSize="13"/>
+                    <TextBox  Width="300"
+                    materialDesign:HintAssist.Hint="Tim kiem"                        
+                    Style="{StaticResource MaterialDesignFloatingHintTextBox}"                        
+                    Margin="5, 0"/>
+                    <Button Margin="5,0" Width="120" Background="#7EEA6C" 
+                Foreground="Black" FontWeight="SemiBold">
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon></materialDesign:PackIcon>
+                            <TextBlock>Tìm kiếm</TextBlock>
+                        </StackPanel>
+                    </Button>
+                    <Button Margin="40,0,0,0"  Width="150" Content="Gia hạn tạm vắng" Background="#7EEA6C" 
+                Foreground="Black" FontWeight="SemiBold"/>
+                </StackPanel>
+            </Grid>
+
+            <Grid Grid.Row="1">
+
+            </Grid>
+
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Column="0">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                        <Button Margin="5,0" Width="150" Background="#7EEA6C" 
+                Foreground="Black" FontWeight="SemiBold">
+                            <StackPanel Orientation="Horizontal">
+                                <materialDesign:PackIcon></materialDesign:PackIcon>
+                                <TextBlock>Thêm tạm vắng</TextBlock>
+                            </StackPanel>
+                        </Button>
+                        <Button Margin="5,0" Width="150" Background="#7EEA6C" 
+                Foreground="Black" FontWeight="SemiBold">
+                            <StackPanel Orientation="Horizontal">
+                                <materialDesign:PackIcon></materialDesign:PackIcon>
+                                <TextBlock>Xóa tạm vắng</TextBlock>
+                            </StackPanel>
+                        </Button>
+                    </StackPanel>
+
+                </Grid>
+                <Grid Grid.Column="1">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                        <Button Margin="5,0" Width="130" Background="#7EEA6C" 
+                Foreground="Black" FontWeight="SemiBold">
+                            <StackPanel Orientation="Horizontal">
+                                <materialDesign:PackIcon></materialDesign:PackIcon>
+                                <TextBlock>xem chi tiết</TextBlock>
+                            </StackPanel>
+                        </Button>
+                        <Button Margin="5,0" Width="130" Background="#7EEA6C" 
+                Foreground="Black" FontWeight="SemiBold">
+                            <StackPanel Orientation="Horizontal">
+                                <materialDesign:PackIcon></materialDesign:PackIcon>
+                                <TextBlock>In danh sách</TextBlock>
+                            </StackPanel>
+                        </Button>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+
+
+        </Grid>
+        <Grid Grid.Row="2" Background="#4CE632">
+            <TextBlock Height="25" Text="User: Lê Khải Hoàn, Chức vụ: Trưởng Công an xã" FontWeight="SemiBold" Margin="10,5,5,0" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="Black" FontSize="13"/>
+            <TextBlock Height="25" Text="17:03, ngày 24 tháng 11 năm 2021" FontWeight="SemiBold" Margin="10,5,5,0" VerticalAlignment="Center" HorizontalAlignment="Right" Foreground="Black" FontSize="13"/>
+        </Grid>
         
     </Grid>
 </Window>
