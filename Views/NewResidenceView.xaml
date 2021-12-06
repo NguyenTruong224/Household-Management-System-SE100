@@ -5,8 +5,83 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Household_Management_System.Views"
         mc:Ignorable="d"
-        Title="NewResidenceView" Height="450" Width="800">
+        WindowStartupLocation="CenterScreen"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="NewResidenceView" Height="450" Width="500">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal" >
+            <TextBlock Width="120" Margin="0,0,10,0" VerticalAlignment="Center" HorizontalAlignment="Left" TextAlignment="Right" >Họ và tên:</TextBlock>
+            <TextBox Width="315"></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" >
+            <TextBlock Width="120" Margin="0,0,10,0" VerticalAlignment="Center" HorizontalAlignment="Left" TextAlignment="Right" >Ngày sinh:</TextBlock>
+            <DatePicker Width="100"></DatePicker>
+            <TextBlock Width="85" Margin="0,0,10,0" VerticalAlignment="Center" HorizontalAlignment="Left" TextAlignment="Right" >Giới tính:</TextBlock>
+            <ComboBox Width="120"></ComboBox>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" >
+            <TextBlock Width="120" Margin="0,0,10,0" VerticalAlignment="Center" HorizontalAlignment="Left" TextAlignment="Right" >Số CMND/CCCD:</TextBlock>
+            <TextBox Width="315"></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Orientation="Horizontal" >
+            <TextBlock Width="120" Margin="0,0,10,0" VerticalAlignment="Center" HorizontalAlignment="Left" TextAlignment="Right" >Nơi thường trú:</TextBlock>
+            <TextBox Width="315"></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Row="4" Orientation="Horizontal" >
+            <TextBlock Width="120" Margin="0,0,10,0" VerticalAlignment="Center" HorizontalAlignment="Left" TextAlignment="Right" >Nơi tạm trú:</TextBlock>
+            <TextBox Width="315"></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Row="5" Orientation="Horizontal" >
+            <TextBlock Width="120" Margin="0,0,10,0" VerticalAlignment="Center" HorizontalAlignment="Left" TextAlignment="Right" >Nơi ở hiện tại:</TextBlock>
+            <TextBox Width="315"></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Row="6" Orientation="Horizontal" >
+            <TextBlock Width="120" Margin="0,0,10,0" VerticalAlignment="Center" HorizontalAlignment="Left" TextAlignment="Right" >Lý do tạm vắng:</TextBlock>
+            <TextBox Width="315"></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Row="7" Orientation="Horizontal" >
+            <TextBlock Width="120" Margin="0,0,10,0" VerticalAlignment="Center" HorizontalAlignment="Left" TextAlignment="Right" >Tạm vắng từ ngày:</TextBlock>
+            <DatePicker Width="100"></DatePicker>
+            <TextBlock Width="85" Margin="0,0,10,0" VerticalAlignment="Center" HorizontalAlignment="Left" TextAlignment="Right" >đến ngày:</TextBlock>
+            <DatePicker Width="120"></DatePicker>
+        </StackPanel>
+        <StackPanel Grid.Row="8" Orientation="Horizontal" >
+            <TextBlock Width="120" Margin="0,0,10,0" VerticalAlignment="Center" HorizontalAlignment="Left" TextAlignment="Right" >Địa chỉ nơi đến:</TextBlock>
+            <TextBox Width="315"></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Row="9" Orientation="Horizontal" >
+            <TextBlock Width="120" Margin="0,0,10,0" VerticalAlignment="Center" HorizontalAlignment="Left" TextAlignment="Right" >Ghi chú:</TextBlock>
+            <TextBox Width="315"></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Row="10" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Margin="5,3,5,3" Width="130" Background="#FF6CEAD1" 
+                Foreground="Black" FontWeight="SemiBold">
+                <StackPanel Orientation="Horizontal">
+                    <materialDesign:PackIcon></materialDesign:PackIcon>
+                    <TextBlock>Lưu</TextBlock>
+                </StackPanel>
+            </Button>
+            <Button Margin="5,3,5,3" Width="130" 
+                Foreground="Black" FontWeight="SemiBold" Background="#FFDF4039">
+                <StackPanel Orientation="Horizontal">
+                    <materialDesign:PackIcon></materialDesign:PackIcon>
+                    <TextBlock>Thoát</TextBlock>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+
     </Grid>
 </Window>
