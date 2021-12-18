@@ -120,6 +120,9 @@
     <Compile Include="Views\DemographicView.xaml.cs">
       <DependentUpon>DemographicView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\HouseholdTransferView.xaml.cs">
+      <DependentUpon>HouseholdTransferView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\HouseholdView.xaml.cs">
       <DependentUpon>HouseholdView.xaml</DependentUpon>
     </Compile>
@@ -186,6 +189,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\DemographicView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\HouseholdTransferView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
